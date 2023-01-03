@@ -1,0 +1,14 @@
+packages:
+  ns_panel_bare: github://e-noyau/esphome/ns_panel_bare.yaml@main
+
+binary_sensor:
+  # The left physical button
+  - platform: gpio
+    id: left_button
+    on_press:
+      - lambda: 'id(nextion_display)->upload_tft();'
+
+  # The right physical button
+  - platform: gpio
+    on_press:
+      - lambda: 'id(nextion_display)->upload_tft();'

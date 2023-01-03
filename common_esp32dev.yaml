@@ -1,4 +1,4 @@
-## Requires ${device_name} and ${ota_password} to be set.
+## Requires ${device_name}, ${api_password} and ${ota_password} to be set.
 
 esphome:
   name: ${device_name}
@@ -6,18 +6,12 @@ esphome:
 esp32:
   board: esp32dev
 
-logger:
-  baud_rate: 0
-  level: DEBUG
-  logs:
-    sensor: WARN
-    resistance: WARN
-    text_sensor: WARN
-    ntc: WARN
-    
 ota:
   password: ${ota_password}
 
 text_sensor:
   - platform: version
     name: ${device_name} ESPHome Version
+
+packages:
+  logger: github://e-noyau/esphome/logger.yaml@main

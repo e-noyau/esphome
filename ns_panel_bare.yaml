@@ -1,4 +1,5 @@
-## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} and ${ota_password} to be set.
+## Requires ${device_name}, ${wifi_ssid}, ${wifi_password}, {api_password} and ${ota_password}
+## to be set.
 ## Also requires
 ## * ${uart_speed}, which should match the one in the hmi/tft file.
 ## * ${tft_url}, where the tft file can be downloaded from.

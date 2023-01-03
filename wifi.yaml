@@ -1,0 +1,13 @@
+## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} to be set.
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
+
+  # Enable fallback hotspot in case wifi connection fails
+  ap:
+    ssid: ${device_name}_portal
+    password: ${wifi_password}
+
+# Setup a captive portal to automatially connect to the device UI if using the fallback hotspot.
+captive_portal:

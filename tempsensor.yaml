@@ -1,9 +1,6 @@
 packages:
   board: github://e-noyau/esphome/board_esp32dev.yaml@main
-  common: github://e-noyau/esphome/common.yaml@main
-  wifi: github://e-noyau/esphome/wifi.yaml@main
-  bt_tracker: github://e-noyau/esphome/bt_tracker.yaml@main
-  uptime: github://e-noyau/esphome/uptime.yaml@main
+  full: github://e-noyau/esphome/full.yaml@main
 
 sensor:
   !include

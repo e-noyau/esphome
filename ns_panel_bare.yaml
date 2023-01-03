@@ -31,29 +31,6 @@ api:
     then:
       - lambda: 'id(nextion_display)->upload_tft();'
 
-binary_sensor:
-  # The left physical button
-  - platform: gpio
-    id: left_button
-    name: "${device_name} left button"
-    pin:
-      number: 14
-      inverted: true
-    icon: mdi:light-switch
-    on_press:
-      - switch.toggle: relay_1
-
-  # The right physical button
-  - platform: gpio
-    id: right_button
-    name: "${device_name} right button"
-    pin:
-      number: 27
-      inverted: true
-    icon: mdi:light-switch
-    on_press:
-      - switch.toggle: relay_2
-
 output:
   # There is a buzzer on this thing
   - platform: ledc

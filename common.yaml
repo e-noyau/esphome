@@ -12,3 +12,10 @@ text_sensor:
 
 packages:
   logger: github://e-noyau/esphome/logger.yaml@main
+
+button:
+  - platform: restart
+    id: restart_button
+    icon: mdi:restart
+    name: "${device_name} Restart"
+    entity_category: config

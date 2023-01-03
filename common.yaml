@@ -1,0 +1,14 @@
+## Requires ${device_name}, ${api_password} and ${ota_password} to be set.
+
+esphome:
+  name: ${device_name}
+
+ota:
+  password: ${ota_password}
+
+text_sensor:
+  - platform: version
+    name: ${device_name} ESPHome Version
+
+packages:
+  logger: github://e-noyau/esphome/logger.yaml@main

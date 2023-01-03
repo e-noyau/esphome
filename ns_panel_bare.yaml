@@ -12,7 +12,8 @@
 ##
 
 packages:
-  common: github://e-noyau/esphome/common_esp32dev.yaml@main
+  board: github://e-noyau/esphome/board_esp32dev.yaml@main
+  common: github://e-noyau/esphome/common.yaml@main
   wifi: github://e-noyau/esphome/wifi_bare.yaml@main
 
 external_components:

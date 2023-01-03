@@ -1,0 +1,19 @@
+packages:
+  board: github://e-noyau/esphome/board_esp32dev.yaml@main
+  common: github://e-noyau/esphome/common.yaml@main
+  wifi: github://e-noyau/esphome/wifi.yaml@main
+  bt_tracker: github://e-noyau/esphome/bt_tracker.yaml@main
+  uptime: github://e-noyau/esphome/uptime.yaml@main
+
+sensor:
+  !include
+    file: sub_pvvx_mithermometer.yaml
+    vars:
+      mac_address: A4:C1:38:DA:6B:9B
+      location: "Office"
+
+  !include
+    file: sub_pvvx_mithermometer.yaml
+    vars:
+      mac_address: A4:C1:38:AB:B2:B9
+      location: "Attic"

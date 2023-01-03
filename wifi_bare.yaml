@@ -1,0 +1,5 @@
+## Requires ${wifi_ssid} and ${wifi_password} to be set.
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}

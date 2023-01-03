@@ -1,0 +1,13 @@
+## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} to be set.
+
+packages:
+  wifi: github://enoyau/esphome/wifi.yaml@main
+  bt_tracker: github://enoyau/esphome/bt_tracker.yaml@main
+  ns_panel_bare: github://enoyau/esphome/ns_panel_bare.yaml@main
+
+
+# Playing buzzer music
+rtttl:
+  id: buzzer
+  output: buzzer_out
+

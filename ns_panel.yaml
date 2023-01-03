@@ -1,10 +1,10 @@
 ## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} to be set.
 
 packages:
-  wifi: github://enoyau/esphome/wifi.yaml@main
-  bt_tracker: github://enoyau/esphome/bt_tracker.yaml@main
-  ns_panel_bare: github://enoyau/esphome/ns_panel_bare.yaml@main
-  uptime: github://enoyau/esphome/uptime.yaml@main
+  wifi: github://e-noyau/esphome/wifi.yaml@main
+  bt_tracker: github://e-noyau/esphome/bt_tracker.yaml@main
+  ns_panel_bare: github://e-noyau/esphome/ns_panel_bare.yaml@main
+  uptime: github://e-noyau/esphome/uptime.yaml@main
 
 
 # Playing buzzer music

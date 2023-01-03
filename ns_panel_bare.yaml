@@ -4,8 +4,8 @@
 ## * ${tft_url}, where the tft file can be downloaded from.
 
 packages:
-  common: github://enoyau/esphome/common_esp32dev.yaml@main
-  wifi: github://enoyau/esphome/wifi_bare.yaml@main
+  common: github://e-noyau/esphome/common_esp32dev.yaml@main
+  wifi: github://e-noyau/esphome/wifi_bare.yaml@main
 
 external_components:
   # The Nextion display is setup in is in a funky Protocol Reparse Mode, this switches it to a

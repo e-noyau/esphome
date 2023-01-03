@@ -1,7 +1,7 @@
 ## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} to be set.
 
 packages:
-  wifi_bare: github://enoyau/esphome/wifi_bare.yaml@main
+  wifi_bare: github://e-noyau/esphome/wifi_bare.yaml@main
 
 wifi:
   # Enable fallback hotspot in case wifi connection fails

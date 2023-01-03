@@ -24,6 +24,8 @@ external_components:
     refresh: 1h
 
 api:
+  password: ${api_password}
+  services:
   - service: upload_tft
     then:
       - lambda: 'id(nextion_display)->upload_tft();'

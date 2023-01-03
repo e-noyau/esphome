@@ -1,12 +1,10 @@
+## Requires ${device_name} and ${ota_password} to be set.
+
 esphome:
   name: ${device_name}
 
 esp32:
   board: esp32dev
-
-text_sensor:
-  - platform: version
-    name: ${device_name} ESPHome Version
 
 logger:
   baud_rate: 0
@@ -16,8 +14,10 @@ logger:
     resistance: WARN
     text_sensor: WARN
     ntc: WARN
+    
+ota:
+  password: ${ota_password}
 
-binary_sensor:
-  # Is the device connected
-  - platform: status
-    name: "${device_name} status"
+text_sensor:
+  - platform: version
+    name: ${device_name} ESPHome Version

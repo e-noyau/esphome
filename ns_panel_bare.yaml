@@ -1,4 +1,4 @@
-## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} to be set.
+## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} and ${ota_password} to be set.
 ## Also requires
 ## * ${uart_speed}, which should match the one in the hmi/tft file.
 ## * ${tft_url}, where the tft file can be downloaded from.
@@ -109,4 +109,4 @@ display:
   - platform: nextion
     id: disp1
     uart_id: tf_uart
-    tft_url: !secret tft_url
+    tft_url: ${tft_url}

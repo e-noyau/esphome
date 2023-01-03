@@ -1,9 +1,9 @@
 ## Requires ${device_name}, ${wifi_ssid} and ${wifi_password} to be set.
 
-wifi:
-  ssid: ${wifi_ssid}
-  password: ${wifi_password}
+packages:
+  wifi_bare: github://enoyau/esphome/wifi_bare.yaml@main
 
+wifi:
   # Enable fallback hotspot in case wifi connection fails
   ap:
     ssid: ${device_name}_portal
@@ -11,3 +11,14 @@ wifi:
 
 # Setup a captive portal to automatially connect to the device UI if using the fallback hotspot.
 captive_portal:
+
+sensor:
+  # WiFi signals strength sensor
+  - platform: wifi_signal
+    name: ${device_name} WiFi Signal Sensor
+    update_interval: 60s
+
+binary_sensor:
+  # Is the device connected
+  - platform: status
+    name: "${device_name} status"

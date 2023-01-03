@@ -1,0 +1,11 @@
+logger:
+  baud_rate: 0
+  level: DEBUG
+  logs:
+    sensor: WARN
+    resistance: WARN
+    text_sensor: WARN
+    ntc: WARN
+    
+api:
+  password: ${api_password}

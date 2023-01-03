@@ -5,10 +5,17 @@ binary_sensor:
   # The left physical button
   - platform: gpio
     id: left_button
+    pin:
+      number: 14
+      inverted: true
     on_press:
       - lambda: 'id(nextion_display)->upload_tft();'
 
   # The right physical button
   - platform: gpio
+    id: right_button
+    pin:
+      number: 27
+      inverted: true
     on_press:
       - lambda: 'id(nextion_display)->upload_tft();'

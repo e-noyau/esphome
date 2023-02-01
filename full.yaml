@@ -4,6 +4,3 @@ packages:
   wifi: github://e-noyau/esphome/wifi.yaml@main
   bt_tracker: github://e-noyau/esphome/bt_tracker.yaml@main
   uptime: github://e-noyau/esphome/uptime.yaml@main
-
-
-

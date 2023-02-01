@@ -8,4 +8,4 @@ logger:
     
 api:
   encryption:
-    key: ${api-key}
+    key: ${api_key}

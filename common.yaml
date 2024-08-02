@@ -1,7 +1,7 @@
 ## Requires ${device_name}, ${api_password} and ${ota_password} to be set.
 
-esphome:
-  name: ${device_name}
+# esphome:
+#   name: ${device_name}
 
 ota:
   password: ${ota_password}

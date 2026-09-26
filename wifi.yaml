@@ -2,6 +2,7 @@
 
 packages:
   wifi_bare: github://e-noyau/esphome/wifi_bare.yaml@main
+  refresh: always
 
 wifi:
   # Enable fallback hotspot in case wifi connection fails

@@ -13,6 +13,7 @@ text_sensor:
 
 packages:
   logger: github://e-noyau/esphome/logger.yaml@main
+  refresh: always
 
 button:
   - platform: restart

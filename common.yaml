@@ -3,9 +3,9 @@
 esphome:
   name: ${device_name}
 
-# ota:
-#   - platform: esphome
-#     password: ${ota_password}
+ota:
+  - platform: esphome
+    password: ${ota_password}
 
 text_sensor:
   - platform: version
